@@ -10,10 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.stackroute.activitystream.backend.dao.UserWorkspaceDAO;
 import com.stackroute.activitystream.backend.model.UserWorkspace;
 
+//Did you tested this DAO?
 public class UserWorkspaceDAOImpl implements UserWorkspaceDAO {
 
 	@Autowired
 	SessionFactory sessionFactory;
+	
+	//define all other methods as discussed in the scrum.
 
 	@Override
 	public boolean addUserToWorkspace(UserWorkspace userWorkSpace) {
