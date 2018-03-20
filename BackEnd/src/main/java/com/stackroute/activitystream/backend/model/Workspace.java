@@ -19,6 +19,7 @@ public class Workspace implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	//why this constructor??
 	public Workspace(int workSpaceId, String workSpaceName, String workSpaceAdminName, String workSpaceAdminPassword,
 			Date workSpaceCreatedOn, boolean isWorkSpaceActive) {
 		super();
@@ -34,6 +35,7 @@ public class Workspace implements Serializable {
 		super();
 	}
 
+	//did you created tables manually OR generated?
 	@Id
 	@Column
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -53,6 +55,7 @@ public class Workspace implements Serializable {
 	@Column
 	private boolean isWorkSpaceActive;
 
+	//where you are storing workspace url?
 	public int getWorkSpaceId() {
 		return workSpaceId;
 	}
