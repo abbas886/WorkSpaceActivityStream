@@ -6,10 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.stackroute.activitystream.backend.dao.WorkspaceDAO;
 import com.stackroute.activitystream.backend.model.Workspace;
 
+
+//Did you tested this DAO?
 public class WorkspaceDAOImpl implements WorkspaceDAO{
 
 	@Autowired
 	SessionFactory sessionFactory;
+	
+	//define all required methods.
 	
 	
 	@Override
