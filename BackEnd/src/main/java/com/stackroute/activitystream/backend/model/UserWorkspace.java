@@ -19,6 +19,7 @@ public class UserWorkspace implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	//why constructor is required?
 	public UserWorkspace(int userWorkSpaceId, String userEmailId, String userName, int workSpaceId,
 			boolean isUserPartOfWorkspace, Date userJoineedWorkSpaceOn) {
 		super();
@@ -47,10 +48,14 @@ public class UserWorkspace implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "WORKSPACE_WORKSPACEID")
 	private int workSpaceId;
+	
+	//what is the use of this column?
 	@Column
 	private boolean isUserPartOfWorkspace;
 	@Column
 	private Date userJoineedWorkSpaceOn;
+	
+	//where you are storing url of the workspace?
 
 	public int getUserWorkSpaceId() {
 		return userWorkSpaceId;
